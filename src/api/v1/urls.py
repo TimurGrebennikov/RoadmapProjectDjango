@@ -1,7 +1,9 @@
 from django.urls import path
 
-from api.v1.payment import views as payment_views
+from .payment import views
 
 urlpatterns = [
-    path("payments/", payment_views.payment_list, name="payment_list"),
+    path("rooms/", views.RoomApiView.as_view(), name="rooms-list"),
+    path("rooms/create/", views.RoomApiView.as_view(), name="rooms-create"),
+    path("rooms/delete/<int:id>/", views.RoomApiView.as_view(), name="rooms-delete"),
 ]
