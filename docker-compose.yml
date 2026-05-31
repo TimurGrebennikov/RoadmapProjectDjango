@@ -32,6 +32,8 @@ services:
       - DB_PASSWORD=mysecretpassword
       - DB_HOST=db
       - DB_PORT=5432
+      - APP_ENV=dev
+      - LOG_LEVEL=INFO
 
 volumes:
   postgres_data:

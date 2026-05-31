@@ -31,3 +31,4 @@ tzdata==2026.2
 virtualenv==21.3.3
 psycopg2-binary==2.9.10
 djangorestframework==3.17.1
+loguru==0.7.3
